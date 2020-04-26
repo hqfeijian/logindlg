@@ -1,0 +1,11 @@
+<view class="authorize-panel" wx:if='{{show}}' catchtouchmove="returnMove" bindtap="clickMask">
+  <view class="authorize-panel-content">
+    <text style="font-size:36rpx;color:#333;padding-top:80rpx;font-weight:bold;">您还未登录</text>
+    <text style="font-size:28rpx;color:#999;padding-top:12rpx;padding-bottom:30rpx;">请先登录再进行操作</text>
+    <image src="/images/ic_authorize_panel.png" style="width:378rpx;height:255rpx;"></image>
+    <view style="width:90%;padding-top:60rpx;padding-bottom:40rpx;display:flex;align-items:center;justify-content: center;">
+      <button class="common-btn" bindtap="cancelDlg" style="margin-right:5%;">暂不登录</button>
+      <button open-type="getUserInfo" class="common-btn" style="background:#eb6100;color:#fff;" bindgetuserinfo="loginDlg">立即登录</button>
+    </view>
+  </view>
+</view>
