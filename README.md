@@ -3,4 +3,4 @@
 
 效果如下：
 
-![组件使用演示](https://github.com/Yesi-hoang/TaoBaoTopLine/blob/master/Gif/TaoBaoTopLineGif.gif)
+![组件使用演示](https://github.com/hqfeijian/logindlg/blob/master/logindlg.gif)
