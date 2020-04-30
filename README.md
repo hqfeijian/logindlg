@@ -23,25 +23,7 @@ loginCancel: function() {
     });
   },
   loginConfirm: function(e) {
-    console.log('userinfo=', e.detail)
-    if (e.detail.detail) {
-      app.bindGetUserInfo(e.detail);
-      // 授权回调
-      app.userInfoReadyCallback = res => {
-        console.log("userInfoReadyCallback res=", res);
-        this.setData({
-          userInfo: app.globalData.userInfo,
-        });
-        wx.showToast({
-          icon: 'none',
-          title: '登录成功',
-        })
-      }
-    } else {
-      wx.showToast({
-        icon: 'none',
-        title: '登录失败',
-      })
-    }
+    console.log('userinfo=', e.detail.detail)
+    //todo 做你想做的事
   }
 ````
